@@ -1,0 +1,36 @@
+.flexContainer{
+    display: flex;
+    background-color: darkblue;
+    flex-wrap: ;
+    height: 400px;
+    width: 600px;
+}
+/* propriedades flexbox:
+s
+    flex-direction: column = colunas
+    flex-direction: column-reverse = colunas rdversas
+    flex-direction: row = linhas
+    flex-direction: row-reverse = linhas reversas
+    
+    flex-wrap: wrap = quebra linha se for necessário
+    flex-wrap: nowrap = não quebra linhas
+    flex-wrap: wrap = quebra linha se for necessário de forma reversa
+
+    justify-content: space-around =
+    justify-content: space-between =
+    justify-content: flex-end =
+    justify-content: flex-start =
+    justify-content: center =
+
+    align-items: flex-end =
+    align-items: flex-start =
+    align-items: center =
+    align-items: baseline =
+    align-items: stretch =
+*/  
+.flexContainer div{
+    font-size: 30px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+}
