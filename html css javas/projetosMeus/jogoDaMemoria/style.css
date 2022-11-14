@@ -9,9 +9,13 @@
 .cartaAmarela:active{
     background-color: #ff0;
 }
+.cartaAmarela{
+
+}
 .cartaAzul:active{
     background-color: #00f;
-
+}.cartaAzul{
+    background-color: #00f;
 }
 .cartaRoxa:active{
     background-color: #80f;
