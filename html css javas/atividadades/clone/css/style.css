@@ -1,0 +1,36 @@
+/* Resetando as configurações css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, section{
+    padding: 5rem;
+}
+header{
+    background-color: #2106f3;
+}
+main{
+    margin: auto;
+}
+.videoPlayer{
+    background-color: #ffeb3b;
+}
+.videoInfo{
+    background-color: #e91e63;
+}
+.actions{
+    background-color: #03a9f4;
+}
+.channel{
+    background-color: #673ab7;
+}
+.subscribe{
+    background-color: #8bc34a;
+}
+.ad{
+    background-color: #ff5722;
+}
+.upNext{
+    background-color: #3f5ab5;
+}

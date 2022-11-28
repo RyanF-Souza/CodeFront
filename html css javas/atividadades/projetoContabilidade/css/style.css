@@ -1,0 +1,143 @@
+/* Variáveis de cores */
+:root{
+    /* Preto e branco */
+    --white: #fff;
+    --black: #000;
+    /* Tons de azul escuro*/
+    --darkBlue800: #212733;
+    --darkBlue600: #1f242e;
+    --darkBlue500: #2c303b;
+    --darkBlue400: #292d39;
+    --darkBlue300: #2b3240;
+    /* Ton de azul */
+    --blue400: #44557a;
+    /* Tons de cinza */
+    --gray500: #4e4e4c;
+    --gray400: #ccc5bb;
+    --gray300: #cdc6bc;
+    --gray200: #ebe6de;
+}
+/* Padronizador geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Início da estilização da Header */
+.header{
+    background-color: var(--darkBlue800);
+}
+/* Estilizando o header container */
+.container{
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+/* Estilizando a ul menu */
+.menu{
+    /* Tornando a ul menu em flex-box */
+    display: flex;
+    list-style: none;
+    /* Estilizando a ul flex-box */
+    align-items: center;
+    justify-content: space-between;
+}
+/* Estilizando os ul li's */
+.menuItem{
+    width: 100%;
+    cursor: pointer;
+}
+.menuItem:hover{
+    background-color: var(--darkBlue300);
+}
+/* Estilizando os links */
+.menuLink{   
+    /* Estilização dos textos do link */
+    text-decoration: none;
+    color: var(--white);
+    /* Tornando o a em, flex-box*/
+    display: flex;
+    /* Alterando as propriedades flex */
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem;
+}
+.menuImg{
+    background-color: var(--gray500);
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+}
+.menuInfo p{
+    font-weight: bold;
+}
+.menuInfo span{
+    font-size: 0.9rem;
+}
+.menuItem button{
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+}
+/* Início da estilização da barra de navegação */
+/* estilizando a logo */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    gap: 1rem;
+}
+.navbarBrand a{
+    color: var(--black);
+    text-decoration: none;
+}
+.navbarBrand p{
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.navbarBrand span{
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+/* Estilizando a lista de navegação */
+.navList{
+    margin-left: auto;
+}
+.navbarNav{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.navItem{
+    text-transform: uppercase;
+}
+.navLink{
+    color: var(--darkBlue300);
+    text-decoration: none;
+    font-size: 0.875;
+    font-weight: bold;
+}
+.navButton button{
+    border: none;
+    background-color: var(--darkBlue300);
+    border-radius: 8px;
+    color: var(--gray200);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+}
+/* Estilizando a área parte principal */
+/* Estilizando o hero da aplicação */
+.hero{
+    background-image: url(../assets/img/cytonn-photography-n95VMLxqM2I-unsplash.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: top center, right;
+    background-size: cover;
+}
+.heroInfo{
+    padding-top: 3rem;
+}
