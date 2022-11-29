@@ -4,33 +4,98 @@
     padding: 0;
     box-sizing: border-box;
 }
-header, section{
-    padding: 5rem;
-}
 header{
-    background-color: #2106f3;
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom: 2px solid #f2f2f2;
+    /* Aplicando o grid */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+
 }
 main{
+    /* Centralização do conteúdo */
     margin: auto;
+    /* Aplicando "grid" na main */
+    display: grid;
+    /* Espaço entre elementos */
+    grid-row-gap: 1.5rem;
+    /* Definindo as áreas do grid */
+    grid-template-areas:
+    'videoPlayer videoPlayer'
+    'videoInfo videoInfo'
+    'actions actions'
+    'channel subscribe'
+    'upNext upNext';
 }
 .videoPlayer{
     background-color: #ffeb3b;
+    grid-area: videoPlayer;
 }
 .videoInfo{
     background-color: #e91e63;
+    grid-area: videoInfo;
 }
 .actions{
     background-color: #03a9f4;
+    grid-area: actions;
 }
 .channel{
     background-color: #673ab7;
+    grid-area: channel;
 }
 .subscribe{
     background-color: #8bc34a;
+    grid-area: subscribe;
 }
 .ad{
     background-color: #ff5722;
+    grid-area: ad;
 }
 .upNext{
     background-color: #3f5ab5;
+    grid-area: upNext;
+}
+@media screen and (min-width: 700px){
+    main{
+        max-width: 1200px;
+        grid-template-areas:
+        'videoPlayer videoPlayer ad'
+        'videoPlayer videoPlayer upNext'
+        'videoInfo actions upNext'
+        'channel subscribe upNext';
+    }
+}
+@media screen and (max-width: 700px){
+    .ad{
+        display: none;
+    }
+}
+body{
+    background-color: #f9f9f9;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+.logo img{
+    width: 100px;
+}
+.search input[type="search"]{
+    width: 400px;
+    padding: 0.5rem;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+.button{
+    padding: 0.25rem 1.5rem;
+    border: 1px solid #2c5fd5;
+    border-radius: 2px;
+    color: #2c5fd5;
+    font-weight: bold;
+    text-decoration: none;
 }

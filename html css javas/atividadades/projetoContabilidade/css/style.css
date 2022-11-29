@@ -140,4 +140,125 @@
 }
 .heroInfo{
     padding-top: 3rem;
+    width: 60%;
+}
+.heroInfo h1{
+    color: var(--darkBlue800);
+    margin: 2rem 0 1rem 0;
+    font-size: 2.5rem;
+    line-height: 90%;
+}
+.heroInfo p{
+    color: var(--darkBlue800);
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 1.4rem 0;
+}
+.heroInfo span{
+    font-weight: bold;
+}
+.heroInfo a{
+    background-color: var(--darkBlue300);
+    color: var(--white);
+    margin-top: 0.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+/* Estilizando a section "boxes" da aplicação */
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--white)
+}
+.box{
+    background-color: var(--darkBlue300);
+    width: 31.5%;
+    border-radius: 2px;
+    padding: 0 1.6rem;
+    position: relative;
+    bottom: 4rem;
+}
+.boxImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: var(--darkBlue300);
+    box-shadow: 4px 4px 0 0 rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    position: relative;
+    bottom: 1.1rem;
+}
+.boxImg img{
+    width: 40px;
+}
+.box h3{
+    text-transform: uppercase;
+    margin: 0.3rem 0;
+}
+.box p{
+    line-height: 1.6;
+    margin: 2rem 0.4rem;
+    
+}
+/* Estilizando a "sessão da aplicação */
+.services{
+    text-align: center;
+    margin: 1rem 0.2rem;
+}
+.services h2{
+    font-size: 2.2rem;
+    color: var(--darkBlue300);
+    text-transform: uppercase;
+}
+.services p{
+    font-size: 1.2rem;
+    color: var(--darkBlue300);
+}
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolioBox{
+    width: 33%;
+    min-height: 13rem;
+    margin: 1rem 0 0;
+    padding: 2rem 1rem 0;
+    display: flex;
+    align-items: flex-start;
+}
+.portfolioImg{
+    background-color: var(--gray200);
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+.portfolioImg img{
+    width: 50px;
+}
+.portfolioText{
+    color: var(--darkBlue300);
+    line-height: 1.3;
+}
+.portfolioText h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.portfolioText p{
+    margin-bottom: 1rem;
+}
+.portfolioText a{
+    text-decoration: none;
+    color: var(--blue400);
 }
